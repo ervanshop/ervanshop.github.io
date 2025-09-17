@@ -105,6 +105,18 @@
     </div>
   </div>
   <div>
+    <!-- Ganti VIDEO_ID_GOES_HERE dengan ID video (mis. dQw4w9WgXcQ) -->
+<iframe
+width="560" height="315"
+src="https://www.youtube.com/embed/22hVBaYOFso?si=yJNjRXp8HlsaOdt2"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen>
+</iframe>
+
+  
+
     <div class="rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-indigo-50 to-white p-8">
       <img src="transistor.jpg" alt="produk1" class="h-100 bg-gray-100 rounded mb-3 flex items-center justify-center"/>
       <!-- Simple SVG illustration as placeholder -->
@@ -155,6 +167,27 @@
       <div>Tel: <a href="tel:+628000000000" class="text-indigo-600">+62 800-0000-000</a></div>
       <div>Email: <a href="mailto:info@example.com" class="text-indigo-600">info@example.com</a></div>
     </div>
+    
+    <img id="myImage" src="transistor.jpg" width="200" onclick="nextGambar()">
+
+    <script>
+    let gambar = ["resistor.jpg", "komponent.jpg", "pcb.jpg"];
+    let index = 0;
+    
+    function nextGambar() {
+      index = (index + 1) % gambar.length;
+      document.getElementById("myImage").src = gambar[index];
+    }
+    </script>
+    
+    
+
+</body>
+    
+  
+  
+  
+  
   </div>
 </footer>
 <script>
